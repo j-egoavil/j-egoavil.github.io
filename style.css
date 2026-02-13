@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #140F2D, #1F1B3A);
   color: #f1f5f9;
   line-height: 1.6;
 }
@@ -14,14 +14,14 @@ header {
 h1 {
   margin: 0;
   font-size: 3rem;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background: linear-gradient(to right, #8B5CF6, #A78BFA);
   -webkit-background-clip: text;
   color: transparent;
 }
 
 section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -29,16 +29,13 @@ h2 {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2rem;
-  color: #00c6ff;
+  color: #A78BFA;
 }
 
-/* Proyectos */
+/* PROYECTOS */
 
 .project {
-  display: flex;
-  flex-direction: column;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  background: #1F1B3A;
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 40px;
@@ -46,15 +43,20 @@ h2 {
 }
 
 .project:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
 }
+
+/* 🔥 IMÁGENES MÁS PEQUEÑAS */
 
 .project img {
   width: 100%;
-  height: 250px;
+  max-height: 300px;   /* antes era 250 o más grande */
   object-fit: cover;
+  display: block;
 }
+
+/* Contenido del proyecto */
 
 .project-content {
   padding: 20px;
@@ -62,13 +64,13 @@ h2 {
 
 .project h3 {
   margin-top: 0;
-  color: #38bdf8;
+  color: #8B5CF6;
 }
 
 .project a {
   display: inline-block;
   margin-top: 15px;
-  color: #00c6ff;
+  color: #A78BFA;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
@@ -78,8 +80,10 @@ h2 {
   color: #ffffff;
 }
 
+/* Contacto y footer */
+
 footer {
   text-align: center;
   padding: 30px;
-  background: rgba(0, 0, 0, 0.3);
+  background: #1F1B3A;
 }
